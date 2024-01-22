@@ -16,22 +16,12 @@ from kivy.core.window import Window
 import importlib
 import os
 
-from kivy import Config
-
-from PIL import ImageGrab
 
 # TODO: You may know an easier way to get the size of a computer display.
-# resolution = ImageGrab.grab().size
 
 # Change the values of the application window size as you need.
-# Config.set("graphics", "height", resolution[1])
-Config.set("graphics", "width", "400")
-
 
 # Place the application window on the right side of the computer screen.
-Window.top = 0
-# Window.left = resolution[0] - Window.width
-
 
 class kivymd_base_project(MDApp):
     KV_DIRS = [os.path.join(os.getcwd(), "View")]
